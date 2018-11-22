@@ -1,0 +1,19 @@
+version: '3'
+services:
+  apache-php:
+    build:
+      context: ./docker/apachephp
+    image: devbox
+    container_name: apachephp
+    ports:
+      - "9999:80"
+    volumes:
+      - "./:/var/www/html"
+    networks:
+      - back-network
+networks:
+  back-network:
+    driver: bridge
+volumes:
+  cinema:
+
