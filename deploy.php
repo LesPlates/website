@@ -4,6 +4,10 @@ namespace Deployer;
 require_once 'recipe/common.php';
 
 
+set('bin/php', function () {
+    return '/usr/local/php7.2/bin/php';
+});
+
 task('deploy', [
     'deploy:info',
     'deploy:prepare',
@@ -49,6 +53,7 @@ host('ssh.cluster011.ovh.net')
     ->set('http_user','lesplateuq')
     ->user('lesplateuq')
     ->set('deploy_path', '/homez.2005/lesplateuq/staging');
+
 
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
