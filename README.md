@@ -1,3 +1,23 @@
+Deployer
+--------
+Pour déployer, on utilise `deployer`, qui se charge de cloner le dépôt sur le serveur et éventuellement de faire d'autres opérations, qui sont listées dans `deploy.php`
+
+#### Prérequis :
+* Diffuser une clé ssh, et avoir sa clé publique dans le fichier `.ssh/authorized_keys` du serveur
+* pouvoir executer php 7.2 en cli
+* pouvoir faire du ssh
+* ...c'est tout.
+
+#### Concrètement :
+
+Les environnements vers lesquels on peut déployer sont les `stage` des sections `host` de `deploy.php`  
+Pour l'instant, on dispose d'un seul environnement disponible : `staging`
+
+Pour déployer : `vendor/bin/dep deploy NOM_ENVIRONNEMENT`
+
+Par exemple, pour déployer sur staging.lesplates.fr :  
+`vendor/bin/dep deploy staging`
+
 Docker
 ------
 
