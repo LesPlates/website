@@ -1,0 +1,14 @@
+uuid: fe5ee341-a219-4086-87e3-71d8962c35fb
+name: 'Les Plates'
+mail: me@localhost.com
+slogan: 'L''enfant et la mer'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

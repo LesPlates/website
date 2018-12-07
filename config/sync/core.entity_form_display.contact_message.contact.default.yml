@@ -1,0 +1,65 @@
+uuid: 922e0c6a-92c6-4e94-a596-189b19398a44
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.contact
+    - field.field.contact_message.contact.field_email
+    - field.field.contact_message.contact.field_message
+    - field.field.contact_message.contact.field_nom
+    - field.field.contact_message.contact.field_prenom
+id: contact_message.contact.default
+targetEntityType: contact_message
+bundle: contact
+mode: default
+content:
+  field_email:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: 'votre adresse email'
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_message:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_nom:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: 'votre nom'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_prenom:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: 'votre prénom'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 4
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  preview:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  mail: true
+  message: true
+  name: true
+  subject: true

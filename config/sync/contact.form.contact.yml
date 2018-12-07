@@ -1,0 +1,12 @@
+uuid: 03fe7491-68fe-43ed-b395-d6f02613697b
+langcode: fr
+status: true
+dependencies: {  }
+id: contact
+label: Contact
+recipients:
+  - sylvain@ferlac.fr
+reply: ''
+weight: 0
+message: 'Votre message a été envoyé avec succès.'
+redirect: /
