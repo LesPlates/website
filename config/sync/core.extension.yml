@@ -35,6 +35,7 @@ module:
   shortcut: 0
   smtp: 0
   standard: 0
+  structure_sync: 0
   system: 0
   taxonomy: 0
   text: 0

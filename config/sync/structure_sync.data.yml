@@ -1,0 +1,16 @@
+taxonomies:
+  tags: {  }
+blocks: {  }
+menus:
+  -
+    menu_name: main
+    title: Contact
+    parent: null
+    uri: 'internal:/contact'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: fr
+    uuid: 729d6634-07e8-4090-9e38-4960f59ab8a3
