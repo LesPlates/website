@@ -3,12 +3,14 @@ namespace Deployer;
 
 require_once 'recipe/common.php';
 
+
 task('deploy', [
     'deploy:info',
     'deploy:prepare',
     'deploy:lock',
     'deploy:release',
     'deploy:update_code',
+    'deploy:vendors',
     'deploy:shared',
     'deploy:symlink',
     'deploy:unlock',
