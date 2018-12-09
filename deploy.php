@@ -65,6 +65,13 @@ host('ssh.cluster011.ovh.net')
     ->user('lesplateuq')
     ->set('deploy_path', '/homez.2005/lesplateuq/staging');
 
+host('ssh.cluster011.ovh.net')
+    ->stage('dev')
+    ->set('branch', 'master')
+    ->set('http_user','lesplateuq')
+    ->user('lesplateuq')
+    ->set('deploy_path', '/homez.2005/lesplateuq/dev');
+
 
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
