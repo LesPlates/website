@@ -11,13 +11,15 @@ Pour déployer, on utilise `deployer`, qui se charge de cloner le dépôt sur le
 #### Concrètement :
 
 Les environnements vers lesquels on peut déployer sont les `stage` des sections `host` de `deploy.php`  
-Pour l'instant, on dispose d'un seul environnement disponible : `staging`
+Pour l'instant, on dispose de deux environnement disponible : `staging` et `dev`
 
 Pour déployer (à la racine du drupal) :  
 `vendor/bin/dep deploy NOM_ENVIRONNEMENT`
 
-Par exemple, pour déployer sur staging.lesplates.fr :  
-`vendor/bin/dep deploy staging`
+Par exemple, pour déployer sur https://staging.lesplates.fr :  
+`vendor/bin/dep deploy staging`  
+Ou pour déployer sur https://dev.lesplates.fr :  
+`vendor/bin/dep deploy dev`
 
 Docker
 ------
@@ -48,3 +50,20 @@ Youpi, [http://localhost:9999]
 Pour se connecter à la devbox :
 `docker exec -it apachephp bash`
 
+Installer une instance de développement
+---------------------------------------
+
+Cette procédure est le reflet de nos connaissances actuelle, ne pas hésiter à l'améliorer :-)
+
+1. On clone le dépôt
+1. On fait une install  
+`vendor/bin/drush site:install --db-url=mysql://root:mysql@localhost:3306/lesplates --account-pass=PASS_ADMIN`
+1. On renseigne le UUID pour avoir le même sur toutes nos instances, pour pouvoir partager les configurations  
+`vendor/bin/drush config-set "system.site" uuid "fe5ee341-a219-4086-87e3-71d8962c35fb" --yes`
+1. On fait un peu de ménage dans l'install par défaut (des résidus bloqueraient la suite, sinon)
+`vendor/bin/drush entity:delete shortcut`
+1. On importe la configuration partagée (qui réside dans `config/sync`)  
+`vendor/bin/drush config:import --source ../config/sync --yes`
+1. On importe la structure partagée (qui réside dans `config/sync`)  
+`vendor/bin/drush ia --choice=full`
+1. On renseigne les données concernant le compte d'envoi de mails dans le fichier `web/sites/default/settings.php`
