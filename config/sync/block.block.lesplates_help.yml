@@ -11,7 +11,7 @@ _core:
 id: lesplates_help
 theme: lesplates
 region: help
-weight: -30
+weight: -6
 provider: null
 plugin: help_block
 settings:

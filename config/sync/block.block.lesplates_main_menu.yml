@@ -12,8 +12,8 @@ _core:
   default_config_hash: GT_zYl7I9VAILH8OxMRe-VDvFadCDHxRcnmBc5xEmf0
 id: lesplates_main_menu
 theme: lesplates
-region: sidebar_first
-weight: 10
+region: navigation_collapsible
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:
