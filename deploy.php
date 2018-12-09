@@ -8,6 +8,15 @@ set('bin/php', function () {
     return '/usr/local/php7.2/bin/php';
 });
 
+task("drupal:load_config","
+    {{bin/php}} vendor/bin/drush config:import  --source ../config/sync/ --yes
+");
+
+task("drupal:load_structure","
+    {{bin/php}} vendor/bin/drush ia --choice=full
+");
+
+
 task('deploy', [
     'deploy:info',
     'deploy:prepare',
@@ -17,6 +26,8 @@ task('deploy', [
     'deploy:vendors',
     'deploy:shared',
     'deploy:symlink',
+    'drupal:load_config',
+    'drupal:load_structure',
     'deploy:unlock',
     'cleanup'
 ]);
