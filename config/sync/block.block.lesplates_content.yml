@@ -1,0 +1,22 @@
+uuid: c675409f-0a3b-4cce-be7f-3c77b9859dcc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lesplates
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: lesplates_content
+theme: lesplates
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

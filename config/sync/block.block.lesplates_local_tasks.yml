@@ -1,0 +1,22 @@
+uuid: 4584e377-7de4-4e65-9a44-43a3958c6e0f
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - lesplates
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: lesplates_local_tasks
+theme: lesplates
+region: header
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

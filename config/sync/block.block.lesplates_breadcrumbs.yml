@@ -1,0 +1,22 @@
+uuid: 98fd8272-19ca-4be1-aa81-c5f974fc0f78
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lesplates
+_core:
+  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
+id: lesplates_breadcrumbs
+theme: lesplates
+region: header
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

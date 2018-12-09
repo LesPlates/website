@@ -1,0 +1,5 @@
+name: "Les Plates"
+type: theme
+description: 'Thème pour Les Plates - École de Voile - https://www/lesplates.fr'
+core: 8.x
+base theme: bootstrap

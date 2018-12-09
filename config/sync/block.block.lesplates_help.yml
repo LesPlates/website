@@ -1,0 +1,22 @@
+uuid: 71e35fa5-85ca-4b53-867e-c0bc2eaea07e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - lesplates
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: lesplates_help
+theme: lesplates
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 6e74790c-7b5a-4886-8ba5-eca6ba4f878d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lesplates
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: lesplates_powered
+theme: lesplates
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

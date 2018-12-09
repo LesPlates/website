@@ -1,0 +1,20 @@
+uuid: b95a1936-56c6-40d5-a6fa-51aba25e3090
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - lesplates
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: lesplates_local_actions
+theme: lesplates
+region: header
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
