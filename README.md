@@ -67,3 +67,30 @@ Cette procédure est le reflet de nos connaissances actuelle, ne pas hésiter à
 1. On importe la structure partagée (qui réside dans `config/sync`)  
 `vendor/bin/drush ia --choice=full`
 1. On renseigne les données concernant le compte d'envoi de mails dans le fichier `web/sites/default/settings.php`
+
+
+Comment `commit` une évolution de la configuration ?
+----------------------------------------------------
+
+La _configuration_ (settings des modules, et autres paramètres) et la _structure_ (disposition des blocks etc.) du site sont stockées dans le dépôt git sous la forme de fichiers `yml`  
+Le flux de travail est le suivant :  
+* je travaille sur mon instance locale de dév, éventuellement via l'interface d'admin.
+* quand la config me satisfait, j'exporte la configuration *globale* en utilisant la commande drush  
+* `vendor/bin/drush config:export --destination=../config/sync` (pour la configuration)  
+Cette commande me liste les éléments ajoutés, modifiés, supprimés et me demande de vérifier : il faut le faire...
+** `vendor/bin/drush export:all` (pour la structure)  
+Ces deux commandes exportent les fichiers ylm dans le dossier `config/sync`
+* une fois la configuration exportée, un `git diff` me permet de visualiser ce qui s'est passé  
+En particulier, je vérifie que les éléments ajoutés ne contiennent pas d'éléments sensibles (mots de passe, email, clé, etc.)
+* je `commit` et `push` cette nouvelle version de la configuration pour que les autres développeurs puissent la mettre en place.
+
+
+Comment charger la configuration issue du dépôt git ?
+-----------------------------------------------------
+
+Quand un développeur a changé la config, il prévient les autres développeurs.  
+Ces derniers `pull` et chargent la config avec un   
+`vendor/bin/drush config:import --source ../config/sync --yes`  
+suivi d'un  
+`vendor/bin/drush ia --choice=full` pour charger la structure  
+(attention, ces deux commandes écrasent la config et la structure de l'installation locale : si vous voulez conserver la votre, il faut exporter AVANT (sur une branche git séparée, par exemple, ça permet de `merge` à terme)
