@@ -754,6 +754,12 @@ $settings['file_scan_ignore_directories'] = [
  */
 $settings['entity_update_batch_size'] = 50;
 
+
+$config['smtp.settings']["smtp_password"]='';
+$config['smtp.settings']["smtp_host"]='';
+$config['smtp.settings']["smtp_username"]='';
+
+
 /**
  * Load local development override configuration, if available.
  *
