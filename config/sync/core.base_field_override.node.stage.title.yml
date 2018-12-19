@@ -1,0 +1,18 @@
+uuid: 23fb7371-54ae-4c0b-98d3-b14a121ce101
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.stage
+id: node.stage.title
+field_name: title
+entity_type: node
+bundle: stage
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

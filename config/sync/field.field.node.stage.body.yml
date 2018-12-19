@@ -1,0 +1,26 @@
+uuid: dc437f3b-a26d-49ef-b8f9-4926c975324c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.stage
+  module:
+    - text
+id: node.stage.body
+field_name: body
+entity_type: node
+bundle: stage
+label: Description
+description: 'Les descriptions de stage c''est cool ! on peut ajouter des dates et des prix !'
+required: false
+translatable: true
+default_value:
+  -
+    summary: ''
+    value: "<p>Et voila une description de stage par défaut qui claque.</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,76 @@
+uuid: b66b1f88-556f-401f-a585-b981cbb04066
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.support.body
+    - field.field.node.support.field_longueur
+    - field.field.node.support.field_nbdispo
+    - field.field.node.support.field_nbequipiers
+    - field.field.node.support.field_photo
+    - field.field.node.support.field_type_support
+    - node.type.support
+  module:
+    - image
+    - options
+    - text
+    - user
+id: node.support.full
+targetEntityType: node
+bundle: support
+mode: full
+content:
+  body:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_longueur:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_nbdispo:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_nbequipiers:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_photo:
+    weight: 5
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_type_support:
+    weight: 0
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden:
+  langcode: true
+  links: true

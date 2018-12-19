@@ -1,0 +1,21 @@
+uuid: bec4d552-e273-471e-a2fe-3398cf16d23e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - footer
+      - tools
+      - account
+    parent: 'main:'
+name: Support
+type: support
+description: 'test entité support'
+help: 'test support'
+new_revision: true
+preview_mode: 1
+display_submitted: false

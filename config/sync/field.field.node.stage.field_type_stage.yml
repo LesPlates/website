@@ -1,0 +1,28 @@
+uuid: ee9cec7e-db9a-4343-9f13-1389de21c552
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_stage
+    - node.type.stage
+    - node.type.type_stage
+id: node.stage.field_type_stage
+field_name: field_type_stage
+entity_type: node
+bundle: stage
+label: 'Type de stage'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      type_stage: type_stage
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

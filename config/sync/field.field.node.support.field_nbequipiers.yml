@@ -1,0 +1,23 @@
+uuid: 4c173348-aea7-4fc3-b99d-353f717f1d14
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nbequipiers
+    - node.type.support
+id: node.support.field_nbequipiers
+field_name: field_nbequipiers
+entity_type: node
+bundle: support
+label: 'Nombre  d''équipiers'
+description: 'Nombre d''équipiers nécessaires pour manœuvrer le support'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

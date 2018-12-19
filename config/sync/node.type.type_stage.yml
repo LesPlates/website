@@ -1,0 +1,21 @@
+uuid: 43d944f4-f4e6-476e-b7f0-1416a836af46
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - footer
+      - tools
+      - account
+    parent: 'main:'
+name: 'Type de stage'
+type: type_stage
+description: 'Un type (général) de stage avec : une durée et une échelle d''âge.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,23 @@
+uuid: dc254dd2-30e6-4be7-a588-492322be1b82
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_longueur
+    - node.type.support
+id: node.support.field_longueur
+field_name: field_longueur
+entity_type: node
+bundle: support
+label: Longueur
+description: 'Longueur du support'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' pieds'
+field_type: integer

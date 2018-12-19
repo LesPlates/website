@@ -1,0 +1,38 @@
+uuid: 134f8a6c-728c-440b-94b1-6165e469b8d3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_photo
+    - node.type.support
+  module:
+    - image
+id: node.support.field_photo
+field_name: field_photo
+entity_type: node
+bundle: support
+label: Image
+description: 'image du support'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '64 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: true
+  default_image:
+    uuid: 0c094090-767d-4916-a94f-05f56a0b4972
+    alt: 'image du support'
+    title: 'image du support'
+    width: 200
+    height: 200
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

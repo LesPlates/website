@@ -1,0 +1,23 @@
+uuid: 910f05e1-23b0-4130-8dc6-cd9e2a77f97e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nb_inscrits
+    - node.type.stage
+id: node.stage.field_nb_inscrits
+field_name: field_nb_inscrits
+entity_type: node
+bundle: stage
+label: 'Nombre d''inscrits'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

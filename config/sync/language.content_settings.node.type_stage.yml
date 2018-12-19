@@ -1,0 +1,11 @@
+uuid: dc5f80c4-508d-4b80-9351-ab858ddcbdea
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.type_stage
+id: node.type_stage
+target_entity_type_id: node
+target_bundle: type_stage
+default_langcode: site_default
+language_alterable: false

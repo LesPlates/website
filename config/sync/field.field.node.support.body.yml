@@ -1,0 +1,22 @@
+uuid: 5cfe430c-f61f-40f3-9df6-86d0c77b18d8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.support
+  module:
+    - text
+id: node.support.body
+field_name: body
+entity_type: node
+bundle: support
+label: Description
+description: 'Description rapide du support (taille, maniabilité, vitesse ...)'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

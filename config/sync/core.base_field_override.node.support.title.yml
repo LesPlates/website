@@ -1,0 +1,18 @@
+uuid: 0043cb0f-ef2a-4d59-a88e-d7cbb26e998b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.support
+id: node.support.title
+field_name: title
+entity_type: node
+bundle: support
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

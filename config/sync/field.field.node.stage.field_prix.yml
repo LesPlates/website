@@ -1,0 +1,23 @@
+uuid: 0160dd20-2d30-49e3-beb8-8bc39b80bf72
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prix
+    - node.type.stage
+id: node.stage.field_prix
+field_name: field_prix
+entity_type: node
+bundle: stage
+label: Prix
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: €/jour
+field_type: float

@@ -1,0 +1,11 @@
+uuid: 97ac9932-ac84-4591-8557-afde24bf6fe0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.stage
+id: node.stage
+target_entity_type_id: node
+target_bundle: stage
+default_langcode: site_default
+language_alterable: false

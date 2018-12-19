@@ -1,0 +1,25 @@
+uuid: d5c16f0c-8014-4bcd-83fd-e26522f96705
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nbdispo
+    - node.type.support
+id: node.support.field_nbdispo
+field_name: field_nbdispo
+entity_type: node
+bundle: support
+label: 'Nombre disponibles'
+description: 'Nombre de supports de ce type disponibles'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

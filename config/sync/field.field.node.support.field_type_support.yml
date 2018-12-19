@@ -1,0 +1,21 @@
+uuid: a6dddef8-f043-40be-aa10-8a7fb73cefdd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_support
+    - node.type.support
+  module:
+    - options
+id: node.support.field_type_support
+field_name: field_type_support
+entity_type: node
+bundle: support
+label: 'Type de support'
+description: 'Type de support (ex : catamaran, optimist, dériveur ...)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

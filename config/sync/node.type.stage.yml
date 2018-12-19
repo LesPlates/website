@@ -1,0 +1,21 @@
+uuid: 324fab5e-d9da-4dd1-a546-aa98a3814f12
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - footer
+      - tools
+      - account
+    parent: 'main:'
+name: Stage
+type: stage
+description: 'Wow ! Un stage ! C''est extraordinaire ! '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,23 @@
+uuid: 3a1a6b2f-5e4b-4c9c-8371-2400407af2a0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duree
+    - node.type.type_stage
+id: node.type_stage.field_duree
+field_name: field_duree
+entity_type: node
+bundle: type_stage
+label: 'Durée d''une séance'
+description: 'Durée exprimée en minutes.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: min/jour
+field_type: integer

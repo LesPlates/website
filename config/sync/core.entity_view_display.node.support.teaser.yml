@@ -1,0 +1,33 @@
+uuid: 355e861e-10f2-4e74-a3a5-47986fe37f2c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.support.body
+    - field.field.node.support.field_longueur
+    - field.field.node.support.field_nbdispo
+    - field.field.node.support.field_nbequipiers
+    - field.field.node.support.field_photo
+    - field.field.node.support.field_type_support
+    - node.type.support
+  module:
+    - user
+id: node.support.teaser
+targetEntityType: node
+bundle: support
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  field_longueur: true
+  field_nbdispo: true
+  field_nbequipiers: true
+  field_photo: true
+  field_type_support: true
+  langcode: true
