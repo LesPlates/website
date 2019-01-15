@@ -18,4 +18,8 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_duree: true
+  field_max_age: true
+  field_min_age: true
+  field_support: true
   langcode: true

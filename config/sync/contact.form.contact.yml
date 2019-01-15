@@ -5,7 +5,7 @@ dependencies: {  }
 id: contact
 label: Contact
 recipients:
-  - sylvain@ferlac.fr
+  - bordas.jeremie@hotmail.fr
 reply: ''
 weight: 0
 message: 'Votre message a été envoyé avec succès.'

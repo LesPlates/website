@@ -3,3 +3,4 @@ translation:
   use_source: null
   overwrite_customized: true
   overwrite_not_customized: true
+langcode: fr

@@ -28,4 +28,10 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_date_debut: true
+  field_date_fin: true
+  field_nb_inscrits: true
+  field_nb_inscrits_max: true
+  field_prix: true
+  field_type_stage: true
   langcode: true

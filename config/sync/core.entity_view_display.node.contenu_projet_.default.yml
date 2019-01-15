@@ -1,0 +1,29 @@
+uuid: 7261c6d8-d4c2-4017-af38-1ebc089217c1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.contenu_projet_.body
+    - node.type.contenu_projet_
+  module:
+    - text
+    - user
+id: node.contenu_projet_.default
+targetEntityType: node
+bundle: contenu_projet_
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,11 @@
+uuid: 245215bd-8b95-4655-96d6-50672fca65cf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.contenu_projet_
+id: node.contenu_projet_
+target_entity_type_id: node
+target_bundle: contenu_projet_
+default_langcode: site_default
+language_alterable: false
