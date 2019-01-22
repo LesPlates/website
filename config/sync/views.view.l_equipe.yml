@@ -1,23 +1,21 @@
-uuid: 3e69171b-9876-4e63-800b-5d1ff9818635
+uuid: a839e6c3-e3b5-4dc7-b7b6-0004ca92efd3
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_longueur
-    - field.storage.node.field_nbdispo
-    - field.storage.node.field_photo
-    - field.storage.node.field_type_support
+    - field.storage.node.body
+    - field.storage.node.field_profile_pic
     - image.style.thumbnail
-    - node.type.support
+    - node.type.membre
   module:
     - image
     - node
-    - options
+    - text
     - user
 _core:
   default_config_hash: tS8PbpJX90aRFC3-UTgXzdqkq7_2frk2pz4TMijEebM
-id: supports
-label: Supports
+id: l_equipe
+label: 'L''Équipe'
 module: node
 description: 'Find and manage content.'
 tag: default
@@ -55,109 +53,27 @@ display:
             first: '« First'
             last: 'Last »'
       style:
-        type: table
+        type: grid
         options:
           grouping: {  }
-          row_class: ''
-          default_row_class: true
-          override: true
-          sticky: true
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            node_bulk_form: node_bulk_form
-            title: title
-            type: type
-            name: name
-            status: status
-            changed: changed
-            edit_node: edit_node
-            delete_node: delete_node
-            dropbutton: dropbutton
-            timestamp: title
-          info:
-            node_bulk_form:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            title:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            type:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            name:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-low
-            status:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            changed:
-              sortable: true
-              default_sort_order: desc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-low
-            edit_node:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            delete_node:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            dropbutton:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            timestamp:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: changed
-          empty_table: true
+          columns: 4
+          automatic_width: true
+          alignment: horizontal
+          col_class_default: true
+          col_class_custom: ''
+          row_class_default: true
+          row_class_custom: ''
       row:
         type: fields
       fields:
-        field_photo:
-          id: field_photo
-          table: node__field_photo
-          field: field_photo
+        field_profile_pic:
+          id: field_profile_pic
+          table: node__field_profile_pic
+          field: field_profile_pic
           relationship: none
           group_type: group
           admin_label: ''
-          label: Image
+          label: 'Photo de profil'
           exclude: false
           alter:
             alter_text: false
@@ -214,96 +130,14 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_type_support:
-          id: field_type_support
-          table: node__field_type_support
-          field: field_type_support
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: 'Type de support'
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         title:
           id: title
           table: node_field_data
           field: title
-          label: Title
-          exclude: false
-          alter:
-            alter_text: false
-          element_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          entity_type: node
-          entity_field: title
-          type: string
-          settings:
-            link_to_entity: true
-          plugin_id: field
-        field_longueur:
-          id: field_longueur
-          table: node__field_longueur
-          field: field_longueur
           relationship: none
           group_type: group
           admin_label: ''
-          label: Longueur
+          label: Nom
           exclude: false
           alter:
             alter_text: false
@@ -345,10 +179,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: number_integer
+          type: string
           settings:
-            thousand_separator: ''
-            prefix_suffix: true
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -359,15 +192,17 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: node
+          entity_field: title
           plugin_id: field
-        field_nbdispo:
-          id: field_nbdispo
-          table: node__field_nbdispo
-          field: field_nbdispo
+        body:
+          id: body
+          table: node__body
+          field: body
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Nombre disponibles'
+          label: Description
           exclude: false
           alter:
             alter_text: false
@@ -409,10 +244,8 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: number_integer
-          settings:
-            thousand_separator: ''
-            prefix_suffix: true
+          type: text_default
+          settings: {  }
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -475,46 +308,6 @@ display:
           destination: true
           plugin_id: entity_operations
       filters:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: contains
-          value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: title_op
-            label: Title
-            description: ''
-            use_operator: false
-            operator: title_op
-            identifier: title
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: string
-          entity_type: node
-          entity_field: title
         type:
           id: type
           table: node_field_data
@@ -524,7 +317,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            support: support
+            membre: membre
           group: 1
           exposed: false
           expose:
@@ -557,47 +350,6 @@ display:
           plugin_id: bundle
           entity_type: node
           entity_field: type
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: langcode_op
-            label: Language
-            description: ''
-            use_operator: false
-            operator: langcode_op
-            identifier: langcode
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: language
-          entity_type: node
-          entity_field: langcode
         status_extra:
           id: status_extra
           table: node_field_data
@@ -608,7 +360,7 @@ display:
           group: 1
           entity_type: node
       sorts: {  }
-      title: Bateaux
+      title: Equipe
       empty:
         area_text_custom:
           id: area_text_custom
@@ -640,20 +392,17 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
       tags:
-        - 'config:field.storage.node.field_longueur'
-        - 'config:field.storage.node.field_nbdispo'
-        - 'config:field.storage.node.field_photo'
-        - 'config:field.storage.node.field_type_support'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_profile_pic'
   page_1:
     display_options:
-      path: supports
+      path: equipe
       menu:
         type: 'default tab'
         title: Content
@@ -676,14 +425,11 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - url.query_args
         - user
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
       tags:
-        - 'config:field.storage.node.field_longueur'
-        - 'config:field.storage.node.field_nbdispo'
-        - 'config:field.storage.node.field_photo'
-        - 'config:field.storage.node.field_type_support'
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_profile_pic'

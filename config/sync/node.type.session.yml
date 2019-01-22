@@ -1,4 +1,4 @@
-uuid: a7101902-d319-43bc-b4cc-1562191fa0e5
+uuid: 84752183-e639-4138-aebf-81ef242e2fdb
 langcode: fr
 status: true
 dependencies:
@@ -9,8 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Stage
-type: stage
+name: Session
+type: session
 description: ''
 help: ''
 new_revision: true

@@ -1,0 +1,31 @@
+uuid: 7084da4a-5407-4335-9b74-b8df17204bd3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.membre.body
+    - node.type.membre
+  module:
+    - text
+    - user
+id: node.membre.teaser
+targetEntityType: node
+bundle: membre
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

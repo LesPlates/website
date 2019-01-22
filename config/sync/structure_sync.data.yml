@@ -11,6 +11,90 @@ menus:
     description: null
     enabled: '1'
     expanded: '0'
-    weight: '-49'
+    weight: '-45'
     langcode: fr
     uuid: 729d6634-07e8-4090-9e38-4960f59ab8a3
+  -
+    menu_name: main
+    title: 'Stages de voile'
+    parent: null
+    uri: 'internal:/stage'
+    link_title: ''
+    description: 'stages de voile'
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: fr
+    uuid: 0e087bc4-0fd9-42a6-9260-8ff7a1db2369
+  -
+    menu_name: main
+    title: 'Voile à l''année'
+    parent: null
+    uri: 'internal:/vala'
+    link_title: ''
+    description: 'voile à l''année'
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: fr
+    uuid: 60c7b175-6866-4bfb-abfe-8d228ba561c4
+  -
+    menu_name: main
+    title: 'L''association'
+    parent: null
+    uri: 'internal:/association'
+    link_title: ''
+    description: association
+    enabled: '1'
+    expanded: '1'
+    weight: '-47'
+    langcode: fr
+    uuid: 13b16be6-866e-4bb5-bdb6-4e7e2c30c056
+  -
+    menu_name: main
+    title: Equipe
+    parent: 'menu_link_content:13b16be6-866e-4bb5-bdb6-4e7e2c30c056'
+    uri: 'internal:/association/equipe'
+    link_title: ''
+    description: equipe
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: fr
+    uuid: 1650c49b-5dad-4191-bd98-0d668c63998d
+  -
+    menu_name: main
+    title: Bateaux
+    parent: null
+    uri: 'internal:/bateaux'
+    link_title: ''
+    description: bateaux
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: fr
+    uuid: 4d9be31e-6e12-4be7-b678-53b3b64655f6
+  -
+    menu_name: main
+    title: 'Projet associatif'
+    parent: 'menu_link_content:13b16be6-866e-4bb5-bdb6-4e7e2c30c056'
+    uri: 'internal:/association/projet'
+    link_title: ''
+    description: 'projet associatif'
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: fr
+    uuid: 7a0d34b8-df21-4c0c-9fc0-0b8304ec3794
+  -
+    menu_name: main
+    title: Actualité
+    parent: null
+    uri: 'internal:/actualite'
+    link_title: ''
+    description: actualite
+    enabled: '1'
+    expanded: '0'
+    weight: '-46'
+    langcode: fr
+    uuid: 86e824ef-d912-40d6-af5a-ab41ae2b57aa

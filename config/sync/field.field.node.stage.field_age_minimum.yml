@@ -1,0 +1,23 @@
+uuid: d913316d-39fe-4c70-8456-cc7c170f8047
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_age_minimum
+    - node.type.stage
+id: node.stage.field_age_minimum
+field_name: field_age_minimum
+entity_type: node
+bundle: stage
+label: 'Age minimum'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

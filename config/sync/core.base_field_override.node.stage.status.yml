@@ -1,0 +1,22 @@
+uuid: 1d6101b3-86bb-4a15-a254-aea593012599
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.stage
+id: node.stage.status
+field_name: status
+entity_type: node
+bundle: stage
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

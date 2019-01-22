@@ -1,0 +1,50 @@
+uuid: 0a9509c0-dae4-4cca-ab14-857e48afcd66
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.membre.body
+    - field.field.node.membre.field_profile_pic
+    - image.style.thumbnail
+    - node.type.membre
+  module:
+    - image
+    - text
+id: node.membre.default
+targetEntityType: node
+bundle: membre
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_profile_pic:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

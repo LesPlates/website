@@ -1,11 +1,11 @@
-uuid: 6bf946b4-1a6b-4f29-9c13-fc6a21299f81
+uuid: da120621-5f99-452e-9ca2-c0289c8e28df
 langcode: fr
 status: true
 dependencies:
   config:
-    - node.type.stage
-id: node.stage
+    - node.type.session
+id: node.session
 target_entity_type_id: node
-target_bundle: stage
+target_bundle: session
 default_langcode: site_default
 language_alterable: false

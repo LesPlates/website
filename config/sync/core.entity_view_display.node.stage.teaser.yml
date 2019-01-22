@@ -1,37 +1,21 @@
-uuid: 6ed4f542-7eba-478b-90e5-1ff87eea0c0f
+uuid: 3a0d2b0c-1c56-432f-8aa9-b1a720190d8d
 langcode: fr
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.stage.body
     - node.type.stage
   module:
-    - text
     - user
 id: node.stage.teaser
 targetEntityType: node
 bundle: stage
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
-  field_date_debut: true
-  field_date_fin: true
-  field_nb_inscrits: true
-  field_nb_inscrits_max: true
-  field_prix: true
-  field_type_stage: true
   langcode: true

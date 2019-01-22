@@ -21,31 +21,13 @@ bundle: support
 mode: default
 content:
   body:
-    weight: 5
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_longueur:
-    weight: 2
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_nbdispo:
-    weight: 4
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_nbequipiers:
     weight: 3
     label: above
     settings:
@@ -54,8 +36,26 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
+  field_nbdispo:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_nbequipiers:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
   field_photo:
-    weight: 6
+    weight: 0
     label: above
     settings:
       image_style: ''
@@ -64,14 +64,14 @@ content:
     type: image
     region: content
   field_type_support:
-    weight: 1
+    weight: 2
     label: inline
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   links:
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }

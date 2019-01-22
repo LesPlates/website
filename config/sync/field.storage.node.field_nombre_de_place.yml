@@ -1,15 +1,16 @@
-uuid: 063ccb82-5128-498f-8697-8d8628ca5154
+uuid: db8f3381-88e6-49fb-8881-7817d0150373
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_support
-field_name: field_support
+id: node.field_nombre_de_place
+field_name: field_nombre_de_place
 entity_type: node
-type: entity_reference
+type: integer
 settings:
-  target_type: node
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

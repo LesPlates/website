@@ -10,13 +10,25 @@ definitions:
     menu_name: main
     parent: ''
     expanded: false
-    weight: -44
+    weight: -50
   node__add_page:
+    weight: -50
+    menu_name: tools
+    parent: ''
     enabled: false
+    expanded: false
+  filter__tips_all:
+    weight: -44
     menu_name: tools
     parent: ''
     expanded: false
-    weight: 0
+    enabled: false
+  search__view:
+    weight: -43
+    menu_name: tools
+    parent: ''
+    expanded: false
+    enabled: false
 _core:
   default_config_hash: jdY7AU0tU-QsjmiOw3W8vwpYMb-By--_MSFgbqKUTYM
 langcode: fr

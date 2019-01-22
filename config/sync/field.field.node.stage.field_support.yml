@@ -1,0 +1,28 @@
+uuid: 0801f193-a58e-40a9-89b0-a8b8fa1967ce
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_support
+    - node.type.stage
+    - node.type.support
+id: node.stage.field_support
+field_name: field_support
+entity_type: node
+bundle: stage
+label: Support
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      support: support
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,11 +1,11 @@
-uuid: 063ccb82-5128-498f-8697-8d8628ca5154
+uuid: 7d14ea55-0c3a-457c-bd51-c8cf1d5e8f1f
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_support
-field_name: field_support
+id: node.field_type_de_stage
+field_name: field_type_de_stage
 entity_type: node
 type: entity_reference
 settings:

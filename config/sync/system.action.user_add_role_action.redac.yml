@@ -1,0 +1,14 @@
+uuid: dcbc194d-f30d-48a1-9d12-1a62612bbeaa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.redac
+  module:
+    - user
+id: user_add_role_action.redac
+label: 'Add the redac role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: redac

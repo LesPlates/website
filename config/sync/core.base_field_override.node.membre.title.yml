@@ -1,13 +1,13 @@
-uuid: 75a19cb2-b6d0-46c7-8908-ac75838e4ac5
+uuid: 3f759377-ded6-4874-ac86-8da42d5e16b2
 langcode: fr
 status: true
 dependencies:
   config:
-    - node.type.stage
-id: node.stage.title
+    - node.type.membre
+id: node.membre.title
 field_name: title
 entity_type: node
-bundle: stage
+bundle: membre
 label: Nom
 description: ''
 required: true

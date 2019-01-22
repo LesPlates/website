@@ -1,0 +1,25 @@
+uuid: 88499bf2-4453-417b-9682-28ddd6b62a72
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duree
+    - node.type.session
+id: node.session.field_duree
+field_name: field_duree
+entity_type: node
+bundle: session
+label: Durée
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 60
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: min
+field_type: integer

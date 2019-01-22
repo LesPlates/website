@@ -1,15 +1,16 @@
-uuid: 063ccb82-5128-498f-8697-8d8628ca5154
+uuid: 814d6018-537e-44e2-83d6-e439248da507
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-id: node.field_support
-field_name: field_support
+id: node.field_tarif
+field_name: field_tarif
 entity_type: node
-type: entity_reference
+type: integer
 settings:
-  target_type: node
+  unsigned: false
+  size: normal
 module: core
 locked: false
 cardinality: 1

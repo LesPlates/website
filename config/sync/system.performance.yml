@@ -1,0 +1,7 @@
+cache:
+  page:
+    max_age: 0
+css:
+  preprocess: false
+js:
+  preprocess: false

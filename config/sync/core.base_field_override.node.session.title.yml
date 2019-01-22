@@ -1,13 +1,13 @@
-uuid: 75a19cb2-b6d0-46c7-8908-ac75838e4ac5
+uuid: c9582c0d-1f03-4010-ba47-985fab696d71
 langcode: fr
 status: true
 dependencies:
   config:
-    - node.type.stage
-id: node.stage.title
+    - node.type.session
+id: node.session.title
 field_name: title
 entity_type: node
-bundle: stage
+bundle: session
 label: Nom
 description: ''
 required: true

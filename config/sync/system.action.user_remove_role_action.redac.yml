@@ -1,0 +1,14 @@
+uuid: 950be868-4e10-4223-9044-a2b6bdaa6414
+langcode: fr
+status: true
+dependencies:
+  config:
+    - user.role.redac
+  module:
+    - user
+id: user_remove_role_action.redac
+label: 'Remove the redac role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: redac

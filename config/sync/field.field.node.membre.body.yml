@@ -1,0 +1,22 @@
+uuid: 8a256da5-4ed5-4be7-b6bf-9c3acc9a62bd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.membre
+  module:
+    - text
+id: node.membre.body
+field_name: body
+entity_type: node
+bundle: membre
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

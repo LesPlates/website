@@ -1,0 +1,21 @@
+uuid: db798520-ac62-4e0c-a1e2-5d45cce77a62
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_creneaux
+    - node.type.session
+  module:
+    - datetime
+id: node.session.field_creneaux
+field_name: field_creneaux
+entity_type: node
+bundle: session
+label: Créneaux
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

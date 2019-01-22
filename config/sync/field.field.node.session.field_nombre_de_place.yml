@@ -1,0 +1,23 @@
+uuid: 2c5fe8c1-eacc-46c9-a4b1-e2c2d40acd84
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nombre_de_place
+    - node.type.session
+id: node.session.field_nombre_de_place
+field_name: field_nombre_de_place
+entity_type: node
+bundle: session
+label: 'Nombre de place'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

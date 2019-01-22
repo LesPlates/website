@@ -1,80 +1,38 @@
-uuid: f957cc86-6672-4b02-9dff-4aea01767453
+uuid: 5f83c320-e547-46d5-ac81-f5888ea31d52
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.stage.body
-    - field.field.node.stage.field_date_debut
-    - field.field.node.stage.field_date_fin
-    - field.field.node.stage.field_nb_inscrits
-    - field.field.node.stage.field_nb_inscrits_max
-    - field.field.node.stage.field_prix
-    - field.field.node.stage.field_type_stage
+    - field.field.node.stage.field_age_maximum
+    - field.field.node.stage.field_age_minimum
+    - field.field.node.stage.field_support
     - node.type.stage
   module:
-    - datetime
-    - text
     - user
 id: node.stage.default
 targetEntityType: node
 bundle: stage
 mode: default
 content:
-  body:
-    label: above
-    type: text_default
-    weight: 6
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  field_date_debut:
+  field_age_maximum:
     weight: 1
     label: above
     settings:
-      timezone_override: Europe/Paris
-      date_format: 'l, d/m/Y'
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    type: datetime_custom
+    type: number_integer
     region: content
-  field_date_fin:
+  field_age_minimum:
     weight: 2
     label: above
     settings:
-      timezone_override: Europe/Paris
-      date_format: 'l, d/m/Y'
-    third_party_settings: {  }
-    type: datetime_custom
-    region: content
-  field_nb_inscrits:
-    weight: 3
-    label: above
-    settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
     region: content
-  field_nb_inscrits_max:
-    weight: 4
-    label: inline
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_integer
-    region: content
-  field_prix:
-    weight: 5
-    label: above
-    settings:
-      thousand_separator: ''
-      decimal_separator: .
-      scale: 2
-      prefix_suffix: true
-    third_party_settings: {  }
-    type: number_decimal
-    region: content
-  field_type_stage:
+  field_support:
     weight: 0
     label: above
     settings:
