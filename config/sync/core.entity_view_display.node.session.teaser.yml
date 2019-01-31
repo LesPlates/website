@@ -28,4 +28,10 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_creneaux: true
+  field_duree: true
+  field_nombre: true
+  field_nombre_de_place: true
+  field_tarif: true
+  field_type_de_stage: true
   langcode: true
