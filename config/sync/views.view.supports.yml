@@ -653,7 +653,7 @@ display:
         - 'config:field.storage.node.field_type_support'
   page_1:
     display_options:
-      path: supports
+      path: bateaux
       menu:
         type: 'default tab'
         title: Content
