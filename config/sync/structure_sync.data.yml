@@ -18,7 +18,7 @@ menus:
     menu_name: main
     title: 'Stages de voile'
     parent: null
-    uri: 'internal:/stage'
+    uri: 'internal:/stages'
     link_title: ''
     description: 'stages de voile'
     enabled: '1'
@@ -98,3 +98,39 @@ menus:
     weight: '-46'
     langcode: fr
     uuid: 86e824ef-d912-40d6-af5a-ab41ae2b57aa
+  -
+    menu_name: tools
+    title: 'Ajouter un bateau'
+    parent: null
+    uri: 'internal:/node/add/support'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: fr
+    uuid: bd393531-e52b-4082-b46d-26c96c75b1b1
+  -
+    menu_name: tools
+    title: 'Ajouter un stage'
+    parent: null
+    uri: 'internal:/node/add/stage'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: fr
+    uuid: ad7c0fe1-dfb5-4116-b793-0f0004607183
+  -
+    menu_name: tools
+    title: 'Ajouter une session'
+    parent: null
+    uri: 'internal:/node/add/session'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: fr
+    uuid: f236bfbe-161e-42dc-9156-02274938d699
