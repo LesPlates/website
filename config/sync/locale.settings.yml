@@ -1,6 +1,7 @@
 translation:
   update_interval_days: 7
-  use_source: null
+  use_source: remote_and_local
   overwrite_customized: true
   overwrite_not_customized: true
+  path: ../translations
 langcode: fr

@@ -1,6 +1,6 @@
 uuid: 14b469aa-258a-434c-a288-cb2e473b57c5
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
@@ -13,7 +13,7 @@ _core:
   default_config_hash: f3Dd5TnUiFDjFZp9yEGJInwt6cUzs7O6SvLTFTATSlU
 id: lesplates_tools
 theme: lesplates
-region: sidebar_second
+region: navigation
 weight: 0
 provider: null
 plugin: 'system_menu_block:tools'
