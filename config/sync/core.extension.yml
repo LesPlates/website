@@ -9,6 +9,7 @@ module:
   comment: 0
   config: 0
   contact: 0
+  contact_storage: 0
   contextual: 0
   datetime: 0
   dblog: 0
@@ -39,6 +40,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   user: 0

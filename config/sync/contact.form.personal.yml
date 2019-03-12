@@ -1,7 +1,12 @@
 uuid: 9befcc64-75b3-4134-8a7f-6a966253f87b
 langcode: fr
-status: true
-dependencies: {  }
+status: false
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    disabled_form_message: 'This contact form has been disabled.'
 _core:
   default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
 id: personal

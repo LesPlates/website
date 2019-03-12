@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_contact
     - node.type.page
   module:
     - text
@@ -18,12 +19,23 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 100
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
-  links:
-    weight: 101
+  field_contact:
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true

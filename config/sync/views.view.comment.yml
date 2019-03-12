@@ -8,9 +8,9 @@ dependencies:
 _core:
   default_config_hash: cCq1vjj1qmyd39oBIUyOe8YPDsobJ5fZRhp2Xy5O7lA
 id: comment
-label: Comments
+label: Commentaires
 module: comment
-description: 'Find and manage comments.'
+description: 'Trouver et gérer les commentaires.'
 tag: default
 base_table: comment_field_data
 base_field: cid
@@ -324,7 +324,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Author
+          label: Auteur
           exclude: false
           alter:
             alter_text: false
@@ -388,7 +388,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Posted in'
+          label: 'Posté sur'
           exclude: false
           alter:
             alter_text: false
@@ -453,7 +453,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Updated
+          label: 'Mis à jour'
           exclude: false
           alter:
             alter_text: false
@@ -721,7 +721,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Author name'
+            label: 'Nom de l''auteur'
             description: ''
             use_operator: false
             operator: combine_op
@@ -762,7 +762,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Langue
             description: ''
             use_operator: false
             operator: langcode_op
@@ -806,7 +806,7 @@ display:
           entity_type: comment
           entity_field: changed
           plugin_id: date
-      title: Comments
+      title: Commentaires
       header: {  }
       footer: {  }
       empty:
@@ -819,13 +819,13 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No comments available.'
+          content: 'Aucun commentaire disponible.'
           plugin_id: text_custom
       arguments: {  }
       display_extenders: {  }
       use_more: false
       use_more_always: true
-      use_more_text: more
+      use_more_text: plus
       use_ajax: false
       hide_attachment_summary: false
       show_admin_links: true
@@ -860,19 +860,19 @@ display:
   page_published:
     display_plugin: page
     id: page_published
-    display_title: 'Published comments'
+    display_title: 'Commentaires publiés'
     position: 1
     display_options:
       path: admin/content/comment
       menu:
         type: tab
-        title: Comments
-        description: 'Comments published'
+        title: Commentaires
+        description: 'Commentaires publiés'
         parent: ''
         weight: 0
         context: '0'
         menu_name: admin
-      display_description: 'The approved comments listing.'
+      display_description: 'La liste des commentaires approuvés.'
       display_extenders: {  }
       exposed_block: false
       display_comment: ''
@@ -889,19 +889,19 @@ display:
   page_unapproved:
     display_plugin: page
     id: page_unapproved
-    display_title: 'Unapproved comments'
+    display_title: 'Commentaires non aprouvés'
     position: 2
     display_options:
       path: admin/content/comment/approval
       menu:
         type: tab
-        title: 'Unapproved comments'
-        description: 'Comments unapproved'
+        title: 'Commentaires non aprouvés'
+        description: 'Commentaires non-approuvés'
         parent: ''
         weight: 1
         context: '0'
         menu_name: admin
-      display_description: 'The unapproved comments listing.'
+      display_description: 'La liste des commentaires non-approuvés.'
       filters:
         status:
           id: status
@@ -994,7 +994,7 @@ display:
           exposed: true
           expose:
             operator_id: combine_op
-            label: 'Author Name'
+            label: 'Nom de l''auteur'
             description: ''
             use_operator: false
             operator: combine_op
@@ -1035,7 +1035,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Langue
             description: ''
             use_operator: false
             operator: langcode_op
@@ -1261,7 +1261,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Author
+          label: Auteur
           exclude: false
           alter:
             alter_text: false
@@ -1325,7 +1325,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Posted in'
+          label: 'Posté sur'
           exclude: false
           alter:
             alter_text: false
@@ -1390,7 +1390,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Updated
+          label: 'Mis à jour'
           exclude: false
           alter:
             alter_text: false
