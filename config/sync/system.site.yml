@@ -1,11 +1,11 @@
 uuid: fe5ee341-a219-4086-87e3-71d8962c35fb
 name: 'Les Plates'
-mail: me@localhost.com
+mail: sylvain@ferlac.fr
 slogan: 'L''enfant et la mer'
 page:
   403: ''
   404: ''
-  front: /user/login
+  front: /node/5
 admin_compact_mode: false
 weight_select_max: 100
 langcode: fr

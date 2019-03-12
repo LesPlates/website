@@ -6,7 +6,7 @@ menus:
     menu_name: main
     title: Contact
     parent: null
-    uri: 'internal:/contact'
+    uri: 'entity:node/4'
     link_title: ''
     description: null
     enabled: '1'
