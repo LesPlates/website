@@ -78,7 +78,7 @@ Le flux de travail est le suivant :
 * quand la config me satisfait, j'exporte la configuration *globale* en utilisant la commande drush  
 * `vendor/bin/drush config:export --destination=../config/sync` (pour la configuration)  
 Cette commande me liste les éléments ajoutés, modifiés, supprimés et me demande de vérifier : il faut le faire...
-** `vendor/bin/drush export:all` (pour la structure)  
+* `vendor/bin/drush export:all` (pour la structure)  
 Ces deux commandes exportent les fichiers ylm dans le dossier `config/sync`
 * une fois la configuration exportée, un `git diff` me permet de visualiser ce qui s'est passé  
 En particulier, je vérifie que les éléments ajoutés ne contiennent pas d'éléments sensibles (mots de passe, email, clé, etc.)
@@ -94,3 +94,5 @@ Ces derniers `pull` et chargent la config avec un
 suivi d'un  
 `vendor/bin/drush ia --choice=full` pour charger la structure  
 (attention, ces deux commandes écrasent la config et la structure de l'installation locale : si vous voulez conserver la votre, il faut exporter AVANT (sur une branche git séparée, par exemple, ça permet de `merge` à terme)
+
+La commande pour déployer fait un `vendor/bin/drush ia --choice=safe` (noter le `safe`) pour éviter d'écraser les contenus et réglages des blocks qui existent déjà.

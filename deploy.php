@@ -13,7 +13,7 @@ task("drupal:load_config","
 ");
 
 task("drupal:load_structure","
-    {{bin/php}} vendor/bin/drush ia --choice=full
+    {{bin/php}} vendor/bin/drush ia --choice=safe
 ");
 
 
