@@ -75,6 +75,7 @@ Comment `commit` une évolution de la configuration ?
 La _configuration_ (settings des modules, et autres paramètres) et la _structure_ (disposition des blocks etc.) du site sont stockées dans le dépôt git sous la forme de fichiers `yml`  
 Le flux de travail est le suivant :  
 * je travaille sur mon instance locale de dév, éventuellement via l'interface d'admin.
+* ATTENTION ! on clear le cache avant de push avec `vendor/bin/drush cr`
 * quand la config me satisfait, j'exporte la configuration *globale* en utilisant la commande drush  
 * `vendor/bin/drush config:export --destination=../config/sync` (pour la configuration)  
 Cette commande me liste les éléments ajoutés, modifiés, supprimés et me demande de vérifier : il faut le faire...
