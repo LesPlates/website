@@ -1,0 +1,21 @@
+uuid: 9ce56d00-8afb-426d-a322-e6d232bc6532
+langcode: fr
+status: true
+dependencies:
+  module:
+    - les_plates
+  theme:
+    - lesplates
+id: editohome
+theme: lesplates
+region: edito
+weight: 0
+provider: null
+plugin: edito_block
+settings:
+  id: edito_block
+  label: 'Edito home'
+  provider: les_plates
+  label_display: visible
+  edito: 'Les Plates est une école de voile associative, dont l''objet est de faire découvrir la voile et le milieu marin au plus grand nombre.'
+visibility: {  }

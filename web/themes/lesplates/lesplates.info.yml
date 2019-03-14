@@ -1,6 +1,6 @@
 name: "Les Plates"
 type: theme
-description: 'Thème pour Les Plates - École de Voile - https://www/lesplates.fr'
+description: 'École de Voile Les Plates'
 core: 8.x
 base theme: bootstrap
 
@@ -16,5 +16,7 @@ regions:
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+  edito: 'Edito page accueil'
 
 
+logo: 'logo.png'

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains les_plates.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function les_plates_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the les_plates module.
+    case 'help.page.les_plates':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Devs spécifiques pour le site Les Plates') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function les_plates_theme() {
+  return [
+    'les_plates' => [
+      'render element' => 'children',
+    ],
+  ];
+}

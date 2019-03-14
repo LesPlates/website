@@ -1,0 +1,14 @@
+{
+  "name": "drupal/les_plates",
+  "type": "drupal-module",
+  "description": "Devs spécifiques pour le site Les Plates",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/les_plates",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/les_plates",
+    "source": "http://cgit.drupalcode.org/les_plates"
+  },
+  "require": { }
+}

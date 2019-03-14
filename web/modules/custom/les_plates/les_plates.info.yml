@@ -1,0 +1,5 @@
+name: 'Les Plates'
+type: module
+description: 'Devs spécifiques pour le site Les Plates'
+core: 8.x
+package: 'Les Plates'

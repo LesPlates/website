@@ -11,7 +11,7 @@ menus:
     description: null
     enabled: '1'
     expanded: '0'
-    weight: '-45'
+    weight: '-44'
     langcode: fr
     uuid: 729d6634-07e8-4090-9e38-4960f59ab8a3
   -
@@ -23,7 +23,7 @@ menus:
     description: 'stages de voile'
     enabled: '1'
     expanded: '0'
-    weight: '-50'
+    weight: '-49'
     langcode: fr
     uuid: 0e087bc4-0fd9-42a6-9260-8ff7a1db2369
   -
@@ -35,7 +35,7 @@ menus:
     description: 'voile à l''année'
     enabled: '1'
     expanded: '0'
-    weight: '-49'
+    weight: '-48'
     langcode: fr
     uuid: 60c7b175-6866-4bfb-abfe-8d228ba561c4
   -
@@ -47,7 +47,7 @@ menus:
     description: association
     enabled: '1'
     expanded: '1'
-    weight: '-47'
+    weight: '-46'
     langcode: fr
     uuid: 13b16be6-866e-4bb5-bdb6-4e7e2c30c056
   -
@@ -71,7 +71,7 @@ menus:
     description: bateaux
     enabled: '1'
     expanded: '0'
-    weight: '-48'
+    weight: '-47'
     langcode: fr
     uuid: 4d9be31e-6e12-4be7-b678-53b3b64655f6
   -
@@ -95,7 +95,7 @@ menus:
     description: actualite
     enabled: '1'
     expanded: '0'
-    weight: '-46'
+    weight: '-45'
     langcode: fr
     uuid: 86e824ef-d912-40d6-af5a-ab41ae2b57aa
   -
