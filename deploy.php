@@ -5,7 +5,7 @@ require_once 'recipe/common.php';
 
 
 set('bin/php', function () {
-    return '/usr/local/php7.2/bin/php';
+    return '/usr/bin/php7.3';
 });
 
 task("drupal:load_config","
@@ -53,24 +53,24 @@ set('writable_dirs', [
 
 
 set('ssh_type', 'native');
-set('ssh_multiplexing', true);
+set('ssh_multiplexing', false);
 
 set('repository', 'https://github.com/LesPlates/website.git');
 
 
-host('ssh.cluster011.ovh.net')
+host('dev.lesplates.fr')
     ->stage('staging')
     ->set('branch', 'master')
-    ->set('http_user','lesplateuq')
-    ->user('lesplateuq')
-    ->set('deploy_path', '/homez.2005/lesplateuq/staging');
+    ->set('http_user','lesplates')
+    ->user('lesplates')
+    ->set('deploy_path', '/var/www/dev.lesplates.fr/www');
 
-host('ssh.cluster011.ovh.net')
+host('ladefoulade.akenlab.org')
     ->stage('dev')
     ->set('branch', 'master')
-    ->set('http_user','lesplateuq')
-    ->user('lesplateuq')
-    ->set('deploy_path', '/homez.2005/lesplateuq/dev');
+    ->set('http_user','lesplates')
+    ->user('lesplates')
+    ->set('deploy_path', '/var/www/dev.lesplates.fr/www');
 
 
 // [Optional] if deploy fails automatically unlock.
